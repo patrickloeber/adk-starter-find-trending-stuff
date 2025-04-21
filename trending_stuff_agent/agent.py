@@ -119,7 +119,7 @@ def get_github_trending_repos(number_of_repos: Optional[int] = None):
 
 root_agent = Agent(
     name="hackernews_agent",
-    model="gemini-2.5-pro-exp-03-25",
+    model="gemini-2.5-flash-preview-04-17", # "gemini-2.5-pro-exp-03-25"
     description=("Agent to get the top hackernews posts and trending github repos"),
     instruction=("I can get the top hacker news posts and the trending github repos"),
     tools=[get_hackernews_posts, get_github_trending_repos],
